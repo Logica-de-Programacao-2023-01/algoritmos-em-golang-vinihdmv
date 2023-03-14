@@ -1,0 +1,18 @@
+SOMA DE 3 INTEIROS
+
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int64
+	var n2 int64
+	var n3 int64
+	fmt.Print(" Escreva o primeiro numero que se deseja somar,", n1)
+	fmt.Scan(&n1)
+	fmt.Print(" Por getileza escreva o segundo", n2)
+	fmt.Scan(&n2)
+	fmt.Print(" Por fim escreva o ultimo numero", n3)
+	fmt.Scan(&n3)
+	fmt.Println("O resultado da soma de seus número é:", n1+n2+n3)
+  }
