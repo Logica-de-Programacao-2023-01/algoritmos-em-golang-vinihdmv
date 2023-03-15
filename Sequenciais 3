@@ -1,0 +1,19 @@
+Faça um algoritmo que leia o peso e a altura de uma pessoa e calcule o seu IMC (Índice de Massa Corporal).
+
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var alt1 float64
+	var peso float64
+	fmt.Print(" Escreva sua altura", alt1)
+	fmt.Scan(&alt1)
+	fmt.Print(" Escreva seu peso", peso)
+	fmt.Scan(&peso)
+	imc := peso / math.Pow(alt1, 2)
+	fmt.Println("Seu IMC:", imc)
+}
