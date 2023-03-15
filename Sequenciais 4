@@ -1,0 +1,17 @@
+MEDIA PONDERADA
+
+package main
+
+import "fmt"
+
+func main() {
+	var x, y, z float64
+
+	fmt.Print(" Digite um numero de sua escolha", x)
+	fmt.Scan(&x)
+	fmt.Print(" Digite mais um numero de sua escolha", y)
+	fmt.Scan(&y)
+	fmt.Print(" Digite mais um numero de sua escolha", z)
+	fmt.Scan(&z)
+	fmt.Print("Calculo da media pondera=", (x*2+y*3+z*5)/10)
+}
