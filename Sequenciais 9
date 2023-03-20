@@ -1,0 +1,13 @@
+DESCONTO DE 10%
+
+package main
+
+import "fmt"
+
+func main() {
+	var preço float64
+	fmt.Print("Escreva o preço do produto para ser aplicado o desconto :", preço)
+	fmt.Scan(&preço)
+	preço_final := (preço * 10 / 100)
+	fmt.Println(" o preço do seu produto final com o desconto será de", preço-preço_final)
+}
