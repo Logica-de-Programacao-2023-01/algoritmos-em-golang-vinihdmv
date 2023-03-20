@@ -1,0 +1,13 @@
+PESO KG PARA LIBRAS
+
+package main
+
+import "fmt"
+
+func main() {
+	var peso float64
+	fmt.Print("Escreva o seu peso em kilogramas :", peso)
+	fmt.Scan(&peso)
+	peso_libras := (peso * 2.2046)
+	fmt.Println(" Seu peso em libras é de: ", peso_libras)
+}
