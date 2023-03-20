@@ -1,0 +1,15 @@
+NUMERO E SEU ANTECESSOR E SUCESSOR
+
+package main
+
+import "fmt"
+
+func main() {
+	var numero float64
+	fmt.Print("Escreva um número de sua escolha:", numero)
+	fmt.Scan(&numero)
+	ant := (numero - 1)
+	suc := (numero + 1)
+	fmt.Println(" O antecessor  seu número será :", ant)
+	fmt.Println(" O Sucessor do seu número será:", suc)
+}
