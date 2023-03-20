@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+	var idade int64
+	fmt.Print(" Por favor escreva, em anos, a sua idade =", idade)
+	fmt.Scan(&idade)
+	fmt.Println("sua idade em dias será = ", idade*365)
+}
