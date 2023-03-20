@@ -1,0 +1,17 @@
+DIARIA E SALARIO
+
+package main
+
+import "fmt"
+
+func main() {
+	var Dias float64
+	var diaria float64
+	fmt.Print("Escreva o número de dias que irá trabalhar:", Dias)
+	fmt.Scan(&Dias)
+	fmt.Print("Escreva a sua diária de trabalho:", diaria)
+	fmt.Scan(&diaria)
+	salário := (Dias * diaria)
+	fmt.Println(" O seu salário no final dos dias trabalhados será de:", salário)
+
+}
