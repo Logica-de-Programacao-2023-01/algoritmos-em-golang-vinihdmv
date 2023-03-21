@@ -3,24 +3,34 @@ package main
 import "fmt"
 
 func main() {
-
-	var x float64
-	var y float64
-	var z float64
-	fmt.Println("Escreva um numero de sua escolha,", x)
+	var x int
+	var y int
+	var z int
+	fmt.Println("Escreva um numero,", x)
 	fmt.Scan(&x)
-	fmt.Println("Escreva um numero de sua escolha,", y)
+	fmt.Println("Escreva um numero,", y)
 	fmt.Scan(&y)
-	fmt.Println("Escreva um numero de sua escolha,", z)
+	fmt.Println("Escreva um numero,", z)
 	fmt.Scan(&z)
-
-	if x > y && y > z {
-		fmt.Println("O maior número é ", x)
-	} else if y > x && x > z {
-		fmt.Println(" o maior é ", y)
-	} else if z > x && x > y {
-		fmt.Println("O maior é", z)
+	if x < y && y < z || x < z && z < y {
+		fmt.Println(x, "é o menor")
+	} else if y < x && x < z || y < z && z < x {
+		fmt.Println(y, "é o menor")
+	} else if z < x && x < y || z < y && y < x {
+		fmt.Println(z, "é o menor dos três")
+	} else if x == y && x < z {
+		fmt.Println(" os menores valores são:", x, y)
+	} else if x == z && x < y {
+		fmt.Println(" os menores valores são:", x, z)
+	} else if y == z && y < x {
+		fmt.Println(" os menores valores são:", y, z)
+	} else if x == y && z < x {
+		fmt.Println(z, " é o menor valor")
+	} else if y == z && x < y {
+		fmt.Println(x, " é o menor valor ")
+	} else if x == z && y < x {
+		fmt.Println(y, "é o menor valor")
 	} else {
-		fmt.Print("x , y e z são iguais")
+		fmt.Println("Seus numeros são de igual valor")
 	}
-  }
+}
