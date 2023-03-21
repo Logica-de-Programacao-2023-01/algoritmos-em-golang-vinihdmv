@@ -1,0 +1,44 @@
+package main
+
+import (
+	"fmt"
+	_ "fmt"
+	"math"
+)
+
+func main() {
+	var altura float64
+	var sexo int
+	var peso float64
+	var imc float64
+	fmt.Print("Vamos deacobrir se você está acima ou abaixo do peso. Escreva a sua altura ---->", altura)
+	fmt.Scan(&altura)
+	fmt.Print(" diga-me o seu peso em kg---->.", peso)
+	fmt.Scan(&peso)
+	fmt.Print(" diga-me o seu sexo [Masculino=1 ; Femenino=0] ---->.", sexo)
+	fmt.Scan(&sexo)
+	if sexo == 1 {
+		imc := peso / math.Pow(altura, 2)
+		fmt.Print("Seu IMC--->", imc)
+	} else if imc < 19.1 {
+		fmt.Println("Abaixo do peso")
+	} else if imc > 19.1 && imc < 25.8 {
+		fmt.Println("Peso normal")
+	} else if imc > 27.3 && imc < 32.3 {
+		fmt.Println("Acima do peso normal")
+	} else {
+		fmt.Println("Obesidade")
+	}
+	if sexo == 0 {
+		imc := peso / math.Pow(altura, 2)
+		fmt.Print("Seu IMC--->", imc)
+	} else if imc < 20.7 {
+		fmt.Println("Abaixo do peso")
+	} else if imc > 20.7 && imc < 26.4 {
+		fmt.Println("Peso normal")
+	} else if imc > 27.3 && imc < 31.1 {
+		fmt.Println("Acima do peso normal")
+	} else {
+		fmt.Println("Obesidade")
+	}
+}
