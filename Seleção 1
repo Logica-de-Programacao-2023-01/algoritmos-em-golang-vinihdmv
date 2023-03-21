@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var x float64
+	var y float64
+	fmt.Println("Escreva um numero de sua escolha,", x)
+	fmt.Scan(&x)
+	fmt.Println("Escreva um numero de sua escolha,", y)
+	fmt.Scan(&y)
+
+	if x > y {
+		fmt.Print("Esse é o maior número", x)
+	} else if x < y {
+		fmt.Println(" Escreva o maior número é", y)
+	} else {
+		fmt.Println("os dois são iguais ")
+	}
+
+}
