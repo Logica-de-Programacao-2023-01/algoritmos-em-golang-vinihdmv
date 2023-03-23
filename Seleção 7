@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var salario float64
+	fmt.Println(" Escreva o seu salário", salario)
+	fmt.Scan(&salario)
+	if salario < 1000 {
+		saldesc := salario * 10 / 100
+		fmt.Println(" Seu salário com 10% de aumento é de ", salario+saldesc)
+	} else if salario >= 1000 {
+		saldesc5 := salario * 5 / 100
+		fmt.Println(" Seu salário com 5% de aumento é de", salario+saldesc5)
+	} else {
+		fmt.Println(" Seu salário não preenche os requisitos do desconto dessa forma permanece o mesmo", salario)
+	}
+}
