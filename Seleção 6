@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, y int64
+	fmt.Println("Escreva dois números inteiros de sua escolha", x, y)
+	fmt.Scan(&x, &y)
+	if x > 0 && y > 0 {
+		fmt.Println(" A multiplicação de seus números é igual a", x*y)
+	} else if x < 0 || y < 0 {
+		fmt.Println("A multiplicação de seus números é igual a", x*y)
+	} else {
+		fmt.Println("Seus número não atendem aos requisitos necessários")
+	}
+}
