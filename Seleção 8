@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numero int64
+	fmt.Println("Escolha um número de sua preferencia", numero)
+	fmt.Scan(&numero)
+	if numero == 1 {
+		fmt.Print("Seu número corresponde a domingo")
+	} else if numero == 2 {
+		fmt.Println(" Seu número corresponde a segunda")
+	} else if numero == 3 {
+		fmt.Println(" Seu número corresponde a terça")
+	} else if numero == 4 {
+		fmt.Println(" Seu número corresponde a quarta")
+	} else if numero == 5 {
+		fmt.Println(" Seu número corresponde a quinta")
+	} else if numero == 6 {
+		fmt.Println(" Seu número corresponde a sexta")
+	} else if numero == 7 {
+		fmt.Println(" Seu número corresponde a sabado")
+	} else {
+		fmt.Println(" Seu número não corresponde a um dia da semana")
+	}
+
+}
