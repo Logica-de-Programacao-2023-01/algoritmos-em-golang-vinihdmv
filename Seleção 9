@@ -1,0 +1,36 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, y, z float64
+	fmt.Println(" Escreva 3 números de sua escolha", x, y, z)
+	fmt.Scan(&x, &y, &z)
+	if x == y && x == z || y == z {
+		fmt.Println("Em ordem cresente", x, y, z)
+	} else if x == y && x < z {
+		fmt.Println("Em ordem cresente será", y, x, z)
+	} else if x == y && x > z {
+		fmt.Println("Em ordem cresente será", z, x, y)
+	} else if x == z && x < y {
+		fmt.Println("Em ordem cresente será", z, x, y)
+	} else if x == z && x > y {
+		fmt.Println("Em ordem cresente será", y, x, z)
+	} else if y == z && y < x {
+		fmt.Println("Em ordem cresente será", y, z, x)
+	} else if y == z && y > x {
+		fmt.Println("Em ordem cresente será", x, y, z)
+	} else if x > z && x > y && y > z {
+		fmt.Println("Em ordem cresente será", z, y, x)
+	} else if x > z && x > y && z > y {
+		fmt.Println("Em ordem cresente será", y, z, x)
+	} else if y > x && y > z && x > z {
+		fmt.Println("Em ordem cresente será", z, x, y)
+	} else if y > x && y > z && z > x {
+		fmt.Println("Em ordem cresente será", x, z, y)
+	} else if z > x && z > y && y > x {
+		fmt.Println("Em ordem cresente será", x, y, z)
+	} else if z > x && z > y && x > y {
+		fmt.Println("Em ordem cresente será", y, x, z)
+	}
+}
