@@ -6,6 +6,7 @@ func main() {
 	var x int
 	fmt.Print(" escreva um numero que queira", x)
 	fmt.Scan(&x)
+	fmt.Println("Os divisores de ", x, " são:")
 	for i := 1; i <= 999; i++ {
 		if x%i == 0 {
 			fmt.Println(i)
