@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Println(" Escreva um numero e te daremos sua tabuada até 10", x)
+	fmt.Scan(&x)
+	for i := 0; i <= 10; i++ {
+		fmt.Println(i*x)
+	}
+
+}
