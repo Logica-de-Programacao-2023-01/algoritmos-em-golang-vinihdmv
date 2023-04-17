@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var soma, contador, num int
+	for {
+		fmt.Println("Esceva um numero", num)
+		fmt.Scan(&num)
+		if num == 0 {
+			break
+		}
+		//Caso contrário, adicionamos o número digitado à variável sum e incrementamos a variável count
+		soma += num
+		contador++
+	}
+	if contador == 0 {
+		fmt.Print("Nenhum numero foi inserido")
+	} else {
+		fmt.Println("A média de seus numeros é igual a --------->", float64(soma)/float64(contador))
+	}
+}
